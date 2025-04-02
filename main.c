@@ -135,12 +135,12 @@ void sleepProgram(int milliseconds);
  * Initialize the algorithms array. This is made global as multiple functions access it.
 */
 SortingAlgorithm algorithms[] = {
-    {"Selection Sort", "output/selection-sort.txt", 0.0, selectionSort},
-    {"Bubble Sort", "output/bubble-sort.txt", 0.0,  bubbleSort},
-    {"Insertion Sort", "output/insertion-sort.txt", 0.0, insertionSort},
-    {"Merge Sort", "output/merge-sort.txt", 0.0, mergeSort},
-    {"Quick Sort", "output/quick-sort.txt", 0.0, quickSort},
-    {"Heap Sort", "output/heap-sort.txt", 0.0, heapSort},
+    {"Selection Sort", "selection-sort.txt", 0.0, selectionSort},
+    {"Bubble Sort", "bubble-sort.txt", 0.0,  bubbleSort},
+    {"Insertion Sort", "insertion-sort.txt", 0.0, insertionSort},
+    {"Merge Sort", "merge-sort.txt", 0.0, mergeSort},
+    {"Quick Sort", "quick-sort.txt", 0.0, quickSort},
+    {"Heap Sort", "heap-sort.txt", 0.0, heapSort},
 };
 int algorithmsSize = sizeof(algorithms)/sizeof(algorithms[0]);
 
@@ -172,7 +172,7 @@ int main(void) {
 
         unsigned long int *unsortedArr;
         unsigned long int startingValue = 0;
-        char *unsortedArrayOutputFile = "output/unsorted.txt";
+        char *unsortedArrayOutputFile = "unsorted.txt";
 
         // After every run, clear the unsorted output file
         clearFile(unsortedArrayOutputFile);
